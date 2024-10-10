@@ -1,26 +1,56 @@
 
+using System.Diagnostics;
+
 public class Program
 {
     public static void Main(string[] args)
     {
-        FahrenheitToCelsius(68); // Test FahrenheitToCelsius Function with a random value
 
-        // Test your functions by calling them below:
-        // CheckForPositiveNegativeZero(-1); // This should output: "Your number is negative"
-        // CheckForPositiveNegativeZero(0); // This should output: "Your number is zero"
-        // CheckForPositiveNegativeZero(1); // This should output: "Your number is positive"
-        // ...
-        // ...
-        // DisplayDayOfWeek(0); // This should output: "Thursday"
-
+        CheckForPositiveNegativeZero(-1); // This should output: "Your number is negative"
+        CheckForPositiveNegativeZero(0); // This should output: "Your number is zero"
+        CheckForPositiveNegativeZero(1); // This should output: "Your number is positive"
+ 
     }
 
-    public static void FahrenheitToCelsius(double fahrenheit)
+    public static void CheckForPositiveNegativeZero(int number)
     {
-        double celsiusDegree = (fahrenheit - 32) * 5/9; 
-        Console.WriteLine($"{fahrenheit} degrees Fahrenheit is {celsiusDegree} degrees Celsius.");
+        if (number > 0)
+        {
+            Console.WriteLine("Your number is positive.");
+        }
+        if (number < 0)
+        {
+            Console.WriteLine("Your number is Negative.");
+        }
+        if (number == 0)
+        {
+            Console.WriteLine("Your number is Zero.");
+        }
     }
 
-    // Define your functions below:
+    public static void FindMinimum(int num1, int num2, int num3)
+    {
+        
+    }
+
+    public static void FindMaximum(int num1, int num2, int num3)
+    {
+
+    }
+
+    public static void IsDivisibleBy5(int number)
+    {
+
+    }
+
+    public static void CheckEvenOrOdd(int number)
+    {
+
+    }
+
+    public static void CheckVowelOrConsonant(char letter)
+    {
+
+    }
 
 }
